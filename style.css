@@ -1,0 +1,305 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Font Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #eb2222;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #0cae0e;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  color: #f39c12;
+}
+
+/* Main Container */
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 10%;
+  gap: 2rem;
+}
+
+/* Articles */
+.articles {
+  width: 70%;
+}
+
+.post {
+  background-color: #fff;
+  margin-bottom: 2rem;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.post:hover {
+  transform: translateY(-5px);
+}
+
+.post img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.post h2 {
+  font-size: 24px;
+  margin: 1rem 0;
+}
+
+.post .date {
+  font-size: 14px;
+  color: #888;
+}
+
+.post p {
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+.post a {
+  text-decoration: none;
+  color: #f39c12;
+  font-weight: bold;
+}
+
+.post a:hover {
+  text-decoration: underline;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 25%;
+}
+
+.widget {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+}
+
+.widget h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.widget input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.widget ul {
+  list-style: none;
+}
+
+.widget ul li {
+  margin-bottom: 8px;
+}
+
+.widget ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.widget ul li a:hover {
+  color: #f39c12;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+/* Responsive Design */
+@media (max-width: 900px) {
+  .container {
+      flex-direction: column;
+      padding: 2rem;
+  }
+
+  .articles {
+      width: 100%;
+      margin-bottom: 2rem;
+  }
+
+  .sidebar {
+      width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+
+     
+  }
+
+  nav ul li {
+      margin-bottom: 10px;
+  }
+
+  .post h2 {
+      font-size: 20px;
+  }
+
+  .post p {
+      font-size: 14px;
+  }
+
+  .widget h3 {
+      font-size: 18px;
+  }
+
+  .widget input {
+      font-size: 14px;
+      padding: 8px;
+  }
+
+  footer p {
+      font-size: 14px;
+  }
+}
+
+/* Box Shadow Effect for Hover */
+.post:hover, .widget:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+/* Additional Styling for Articles */
+.article-list {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.article-list .post {
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Background Color Adjustments */
+body {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+header {
+  background-color: #16589a;
+  color: white;
+}
+
+footer {
+  background-color: #16589a;
+}
+
+.post, .widget {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Link Styling */
+a {
+  color: #f39c12;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e67e22;
+  text-decoration: underline;
+}
+
+/* Widget Title Styling */
+.widget h3 {
+  font-size: 22px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Form Elements */
+input[type="text"] {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: border 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #f39c12;
+  outline: none;
+}
+
+/* Footer Enhancements */
+footer p {
+  font-size: 16px;
+  color: #ecf0f1;
+}
+
+/* Add subtle hover effect for navigation */
+nav ul li a:hover {
+  color: #f39c12;
+  border-bottom: 2px solid #f39c12;
+  padding-bottom: 5px;
+}
+
+/* Buttons (Optional) */
+button {
+  background-color: #f39c12;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e67e22;
+}
+
